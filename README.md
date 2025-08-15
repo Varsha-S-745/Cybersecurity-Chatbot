@@ -48,5 +48,3 @@ This version **does not include image search or visual explanations** — it foc
 
 
 
-## Project Structure
-
