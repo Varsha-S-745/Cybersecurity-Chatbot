@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🤖 CYBER BUDDY — Cybersecurity Chatbot</title>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <img src="/static/img/logo.svg" class="logo" alt="SecureBuddy Logo"/>
+      <div>
+        <h1>CYBER BUDDY</h1>
+        <p class="tagline">Your friendly cybersecurity tutor — ask anything and get a full-fledged answers.</p>
+      </div>
+    </header>
+
+    <main class="chat">
+      <div id="messages" class="messages">
+        <div class="msg bot">
+          <div class="bubble">
+            <strong>🔐 CYBER BUDDY:</strong> Hi! Ask me anything about cybersecurity — passwords, MFA, phishing, ransomware, safe Wi-Fi, backups, and more.
+            <br/><br/>
+            Tip: Try “How do I spot a phishing email?”
+          </div>
+        </div>
+      </div>
+
+      <form id="chat-form" class="chat-form">
+        <input id="user-input" type="text" placeholder="Type your question… e.g., What is MFA?" autocomplete="off"/>
+        <button type="submit" id="send-btn">Send</button>
+      </form>
+      <p class="footnote">
+        Uses OpenAI for explanations. No images, only detailed text answers.
+      </p>
+    </main>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
